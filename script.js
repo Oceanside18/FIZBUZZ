@@ -1,10 +1,15 @@
-console.log ('insane in the menbrane');
+// console.log ('insane in the menbrane');
 const ol = document.getElementById("grid");
 for (let i = 1; i <= 25; i++) {
     console.log(i)
     const li = document.createElement('li');
     console.log(li);
-    li.textContent = 'item number ${i}';
+    li.textContent = i;
     ol.appendChild(li);
+    li.addEventListener("Click", () => {
+        if (i % 3 === 0) { console.log("fizz"); }
+        if (i % 5 === 0) {console.log ("buzz"); }
+        console.log('click?');
+    });
 }
    
