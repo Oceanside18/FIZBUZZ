@@ -1,4 +1,4 @@
-// console.log ('insane in the menbrane');
+console.log ('insane in the menbrane');
 const ol = document.getElementById("grid");
 for (let i = 1; i <= 25; i++) {
     console.log(i)
